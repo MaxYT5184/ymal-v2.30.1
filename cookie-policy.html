@@ -70,4 +70,319 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .cookie-table th {
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .cookie-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            color: var(--text-light);
+        }
+        
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .highlight-box {
+            background: var(--light-blue);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid var(--primary-red);
+        }
+        
+        .control-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .control-option {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .control-option h4 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo-container">
+                <div class="logo-icon-custom"></div>
+                <div class="logo-text">Ymal.space</div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="cookie-policy.html" class="nav-link active">Cookie Policy</a>
+                <a href="https://search.ymal.space" class="search-button">Search →</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cookie Policy Content -->
+    <main>
+        <div class="container policy-content">
+            <h1 class="section-title" style="text-align: center; margin-bottom: 10px;">Cookie Policy</h1>
+            <div class="last-updated">Last Updated: January 18, 2024</div>
+            
+            <div class="highlight-box">
+                <h3 style="margin-top: 0; color: var(--primary-red);">Our Cookie Philosophy</h3>
+                <p class="policy-text" style="font-size: 1.1rem;">
+                    <strong>Ymal uses minimal cookies and never uses tracking cookies.</strong> 
+                    We believe in respecting your privacy, which means we avoid unnecessary 
+                    cookies and never use cookies to track you across the web.
+                </p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>1. What Are Cookies?</h2>
+                <p class="policy-text">
+                    Cookies are small text files that are placed on your device when you visit 
+                    a website. They are widely used to make websites work more efficiently and 
+                    provide information to website owners.
+                </p>
+                
+                <p class="policy-text">
+                    At Ymal, we minimize cookie usage and never use cookies for tracking or 
+                    advertising purposes.
+                </p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>2. Cookies We Use</h2>
+                <p class="policy-text">
+                    Ymal uses only essential cookies that are necessary for the website to 
+                    function properly. We do not use any third-party tracking cookies.
+                </p>
+                
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>Cookie Name</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>session_id</strong></td>
+                            <td>Maintains your session for the duration of your visit</td>
+                            <td>Session</td>
+                            <td>Essential</td>
+                        </tr>
+                        <tr>
+                            <td><strong>preferences</strong></td>
+                            <td>Stores your display preferences (theme, language)</td>
+                            <td>30 days</td>
+                            <td>Functional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>consent</strong></td>
+                            <td>Remembers your cookie consent preferences</td>
+                            <td>1 year</td>
+                            <td>Essential</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="policy-section">
+                <h2>3. What We Don't Use</h2>
+                <p class="policy-text">
+                    Unlike many other websites, Ymal does NOT use:
+                </p>
+                
+                <ul class="policy-list">
+                    <li><strong>Tracking cookies:</strong> We don't track your browsing behavior</li>
+                    <li><strong>Advertising cookies:</strong> We don't serve personalized ads</li>
+                    <li><strong>Analytics cookies:</strong> We use privacy-focused analytics that don't use cookies</li>
+                    <li><strong>Third-party cookies:</strong> We don't allow third-party cookies on our site</li>
+                    <li><strong>Social media cookies:</strong> We don't embed social media widgets that track you</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>4. Managing Cookies</h2>
+                <p class="policy-text">
+                    You can control and manage cookies in various ways:
+                </p>
+                
+                <div class="control-options">
+                    <div class="control-option">
+                        <h4>Browser Settings</h4>
+                        <p>Most browsers allow you to refuse cookies or delete existing ones.</p>
+                    </div>
+                    
+                    <div class="control-option">
+                        <h4>Cookie Consent</h4>
+                        <p>When you first visit Ymal, you can choose which cookies to accept.</p>
+                    </div>
+                    
+                    <div class="control-option">
+                        <h4>Privacy Extensions</h4>
+                        <p>Use privacy-focused browser extensions to block unwanted cookies.</p>
+                    </div>
+                </div>
+                
+                <p class="policy-text">
+                    <strong>Note:</strong> Blocking all cookies may affect the functionality of 
+                    our website. Essential cookies are required for the site to work properly.
+                </p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>5. Third-Party Services</h2>
+                <p class="policy-text">
+                    Some third-party services we use may set their own cookies:
+                </p>
+                
+                <ul class="policy-list">
+                    <li><strong>Payment processors:</strong> If you make a purchase (future feature)</li>
+                    <li><strong>Hosting services:</strong> Our hosting provider may set security cookies</li>
+                    <li><strong>Analytics:</strong> We use cookie-free analytics services</li>
+                </ul>
+                
+                <p class="policy-text">
+                    We choose third-party services that respect user privacy whenever possible.
+                </p>
+            </div>
+            
+            <div class="policy-section">
+                <h2>6. Changes to This Policy</h2>
+                <p class="policy-text">
+                    We may update this cookie policy occasionally. We will notify users of 
+                    significant changes by:
+                </p>
+                
+                <ul class="policy-list">
+                    <li>Updating the "Last Updated" date at the top of this page</li>
+                    <li>Showing a notification on our website</li>
+                    <li>If possible, via email for registered users</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>7. Contact Us</h2>
+                <p class="policy-text">
+                    If you have questions about our cookie policy:
+                </p>
+                
+                <ul class="policy-list">
+                    <li><strong>Email:</strong> privacy@ymal.space</li>
+                    <li><strong>Contact Form:</strong> <a href="contact.html" style="color: var(--primary-blue);">Visit our contact page</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <div class="footer-logo-icon-custom"></div>
+                        <div class="footer-logo-text">Ymal.space</div>
+                    </a>
+                    <p class="footer-tagline">
+                        A privacy-first search engine that protects your data while delivering accurate results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">𝔽</a>
+                        <a href="#" class="social-link">𝕀</a>
+                        <a href="#" class="social-link">𝔾</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <div class="footer-links">
+                        <a href="https://search.ymal.space" class="footer-link">Search Engine</a>
+                        <a href="about.html" class="footer-link">Features</a>
+                        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                        <a href="terms.html" class="footer-link">Terms</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="careers.html" class="footer-link">Careers</a>
+                        <a href="blog.html" class="footer-link">Blog</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+                        <a href="gdpr.html" class="footer-link">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Ymal.space. All rights reserved. Search privately, live freely.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        }
+        
+        // Cookie consent reminder (optional)
+        if (!localStorage.getItem('ymal_cookie_consent')) {
+            setTimeout(() => {
+                const consent = confirm('Ymal uses minimal cookies for functionality. Do you accept our use of cookies?');
+                if (consent) {
+                    localStorage.setItem('ymal_cookie_consent', 'accepted');
+                }
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
