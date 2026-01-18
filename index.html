@@ -6,101 +6,222 @@
     <title>Ymal.space - Private Search Engine</title>
     <meta name="description" content="Ymal is a privacy-focused search engine that doesn't track you. Search anonymously with no cookies or ads.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
+    <link rel="icon" href="Copilot_20260118_155318.png">
+    <style>
+        /* Additional styles for index page */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            min-width: 150px;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary-blue), var(--primary-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <a href="/" class="logo">
-                🔍 <span class="logo-text">Ymal</span><span class="logo-domain">.space</span>
+        <div class="container header-container">
+            <a href="/" class="logo-container">
+                <div class="logo-icon-custom"></div>
+                <div class="logo-text">Ymal.space</div>
             </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="about.html">About</a>
-                <a href="privacy-policy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
-                <a href="https://search.ymal.space" class="search-link">Go to Search →</a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="privacy-policy.html" class="nav-link">Privacy</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <a href="https://search.ymal.space" class="search-button">Search →</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Search <span class="highlight">Without</span> Being Watched</h1>
-                <p class="subtitle">Ymal is a privacy-first search engine that doesn't track, store, or sell your data.</p>
-                
-                <div class="search-preview">
-                    <div class="search-box">
-                        <div class="search-icon">🔍</div>
-                        <input type="text" placeholder="Try searching on Ymal..." readonly>
-                        <button onclick="window.location.href='https://search.ymal.space'">Search</button>
-                    </div>
-                    <p class="search-note">Try it at <a href="https://search.ymal.space">search.ymal.space</a></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Search <span style="display: block;">With Privacy</span></h1>
+            <p class="hero-subtitle">
+                Ymal is a privacy-first search engine that protects your data while delivering accurate results. 
+                No tracking, no cookies, just search.
+            </p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" class="search-input" placeholder="Try searching on Ymal..." readonly>
+                    <button onclick="window.location.href='https://search.ymal.space'" class="search-btn">
+                        Try Ymal Search
+                    </button>
+                </div>
+                <p class="search-note">Visit <a href="https://search.ymal.space">search.ymal.space</a> to start searching privately</p>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">No Tracking</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Cookies Used</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Free Searches</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="container">
-                <h2>Why Choose Ymal?</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-icon">🔒</div>
-                        <h3>No Tracking</h3>
-                        <p>We don't track your searches or store personal information. Your privacy comes first.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Fast Results</h3>
-                        <p>Get instant search results aggregated from multiple sources without delays.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🌍</div>
-                        <h3>Global Access</h3>
-                        <p>Available worldwide with clean, ad-free results for everyone.</p>
-                    </div>
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Ymal?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Complete Privacy</h3>
+                    <p class="feature-desc">
+                        We don't track your searches, store your IP address, or use cookies. 
+                        Your search history remains yours alone.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-desc">
+                        Get instant results from multiple search sources. 
+                        Optimized for speed without compromising on privacy.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Global Access</h3>
+                    <p class="feature-desc">
+                        Available worldwide with clean, ad-light results. 
+                        Search in multiple languages without borders.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to Search Privately?</h2>
-                <p>Join thousands of users who have switched to private search.</p>
-                <a href="https://search.ymal.space" class="cta-button">Start Searching Now</a>
-                <p class="small">No account required • Completely free • No installation needed</p>
-            </div>
-        </section>
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Search Privately?</h2>
+            <p class="cta-text">
+                Join thousands of users who have switched to private search. 
+                It's free, fast, and respects your privacy.
+            </p>
+            <a href="https://search.ymal.space" class="cta-button">Start Searching Now</a>
+            <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">
+                No account required • Completely free • No installation needed
+            </p>
+        </div>
+    </section>
 
-        <!-- AdSense placeholder -->
-        <section class="ads">
-            <div class="container">
-                <div class="ad-placeholder">
-                    AdSense Ad Will Appear Here
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    🔍 Ymal.space
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <div class="footer-logo-icon-custom"></div>
+                        <div class="footer-logo-text">Ymal.space</div>
+                    </a>
+                    <p class="footer-tagline">
+                        A privacy-first search engine that protects your data while delivering accurate results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">𝔽</a>
+                        <a href="#" class="social-link">𝕀</a>
+                        <a href="#" class="social-link">𝔾</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <a href="about.html">About</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="mailto:contact@ymal.space">Contact</a>
+                
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <div class="footer-links">
+                        <a href="https://search.ymal.space" class="footer-link">Search Engine</a>
+                        <a href="about.html" class="footer-link">Features</a>
+                        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                        <a href="terms.html" class="footer-link">Terms</a>
+                    </div>
                 </div>
-                <div class="footer-search">
-                    <a href="https://search.ymal.space">Go to Search Engine →</a>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Careers</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                        <a href="#" class="footer-link">GDPR</a>
+                    </div>
                 </div>
             </div>
-            <p class="copyright">© 2024 Ymal.space. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Ymal.space. All rights reserved. Search privately, live freely.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
