@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPR Compliance - Ymal Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Copilot_20260118_155318.png">
+    <style>
+        .gdpr-content {
+            padding: 60px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .gdpr-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .gdpr-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .gdpr-section h3 {
+            color: var(--primary-blue);
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .gdpr-text {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .gdpr-list {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .gdpr-list li {
+            color: var(--text-light);
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .right-card {
+            background: var(--light-blue);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-red);
+        }
+        
+        .right-card h4 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .data-table th {
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            color: var(--text-light);
+        }
+        
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .compliance-box {
+            background: linear-gradient(135deg, var(--light-blue), var(--light-red));
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .request-form {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo-container">
+                <div class="logo-icon-custom"></div>
+                <div class="logo-text">Ymal.space</div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="gdpr.html" class="nav-link active">GDPR</a>
+                <a href="https://search.ymal.space" class="search-button">Search →</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- GDPR Content -->
+    <main>
+        <div class="container gdpr-content">
+            <h1 class="section-title" style="text-align: center; margin-bottom: 10px;">GDPR Compliance</h1>
+            <div class="last-updated" style="text-align: center; color: var(--text-light); margin-bottom: 40px;">
+                General Data Protection Regulation (GDPR) Compliance Statement
+            </div>
+            
+            <div class="compliance-box">
+                <h3 style="margin-top: 0; color: var(--primary-blue); text-align: center;">Our Commitment to GDPR</h3>
+                <p class="gdpr-text" style="text-align: center; font-size: 1.1rem;">
+                    Ymal is fully committed to compliance with the General Data Protection Regulation (GDPR). 
+                    Our privacy-first approach aligns naturally with GDPR principles, making us a 
+                    privacy-respecting choice for users in the EU and worldwide.
+                </p>
+            </div>
+            
+            <div class="gdpr-section">
+                <h2>1. What is GDPR?</h2>
+                <p class="gdpr-text">
+                    The General Data Protection Regulation (GDPR) is a comprehensive data protection 
+                    law that came into effect in the European Union on May 25, 2018. It strengthens 
+                    the rights of individuals regarding their personal data and imposes strict rules 
+                    on organizations that collect or process personal data.
+                </p>
+                
+                <p class="gdpr-text">
+                    Although Ymal is designed to collect minimal data, we fully comply with GDPR 
+                    requirements for all users, regardless of their location.
+                </p>
+            </div>
+            
+            <div class="gdpr-section">
+                <h2>2. Your GDPR Rights</h2>
+                <p class="gdpr-text">
+                    Under GDPR, you have several important rights. Here's how Ymal respects each of them:
+                </p>
+                
+                <div class="rights-grid">
+                    <div class="right-card">
+                        <h4>Right to Access</h4>
+                        <p>You can request confirmation of whether we process your data and access to that data.</p>
+                        <p><strong>Ymal:</strong> Since we don't store personal data, there's nothing to access.</p>
+                    </div>
+                    
+                    <div class="right-card">
+                        <h4>Right to Erasure</h4>
+                        <p>You can request deletion of your personal data.</p>
+                        <p><strong>Ymal:</strong> We don't store personal data, so there's nothing to delete.</p>
+                    </div>
+                    
+                    <div class="right-card">
+                        <h4>Right to Rectification</h4>
+                        <p>You can request correction of inaccurate personal data.</p>
+                        <p><strong>Ymal:</strong> We don't store personal data that could be inaccurate.</p>
+                    </div>
+                    
+                    <div class="right-card">
+                        <h4>Right to Restriction</h4>
+                        <p>You can request restriction of processing of your data.</p>
+                        <p><strong>Ymal:</strong> We process minimal data only for essential functions.</p>
+                    </div>
+                    
+                    <div class="right-card">
+                        <h4>Right to Data Portability</h4>
+                        <p>You can request your data in a structured, commonly used format.</p>
+                        <p><strong>Ymal:</strong> We don't store personal data that could be exported.</p>
+                    </div>
+                    
+                    <div class="right-card">
+                        <h4>Right to Object</h4>
+                        <p>You can object to processing of your personal data.</p>
+                        <p><strong>Ymal:</strong> You can stop using our service at any time.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gdpr-section">
+                <h2>3. Data We Process</h2>
+                <p class="gdpr-text">
+                    In accordance with GDPR's principle of data minimization, Ymal processes the 
+                    absolute minimum amount of data necessary to provide our service:
+                </p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Purpose</th>
+                            <th>Legal Basis</th>
+                            <th>Retention</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Search Queries</strong></td>
+                            <td>To provide search results</td>
+                            <td>Contractual necessity</td>
+                            <td>Not stored</td>
+                        </tr>
+                        <tr>
+                            <td><strong>IP Addresses</strong></td>
+                            <td>Security and abuse prevention</td>
+                            <td>Legitimate interest</td>
+                            <td>24 hours maximum</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technical Data</strong></td>
+                            <td>Service optimization</td>
+                            <td>Legitimate interest</td>
+                            <td>30 days anonymized</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="gdpr-section">
+                <h2>4. Data Protection Measures</h2>
+                <p class="gdpr-text">
+                    Ymal implements several measures to ensure GDPR compliance and protect your data:
+                </p>
+                
+                <ul class="gdpr-list">
+                    <li><strong>Data Minimization:</strong> We collect only what's absolutely necessary</li>
+                    <li><strong>Privacy by Design:</strong> Privacy is built into our architecture</li>
+                    <li><strong>Security Measures:</strong> Encryption, access controls, and regular audits</li>
+                    <li><strong>Data Protection Officer:</strong> Designated person responsible for GDPR compliance</li>
+                    <li><strong>Processor Agreements:</strong> All third-party processors are GDPR-compliant</li>
+                    <li><strong>Breach Notification:</strong> Procedures for notifying authorities and users of breaches</li>
+                </ul>
+            </div>
+            
+            <div class="gdpr-section">
+                <h2>5. International Data Transfers</h2>
+                <p class="gdpr-text">
+                    Ymal operates globally, but we take special care with international data transfers:
+                </p>
+                
+                <ul class="gdpr-list">
+                    <li><strong>EU Data:</strong> Processed within the EU whenever possible</li>
+                    <li><strong>Adequacy Decisions:</strong> We only transfer data to countries with adequate protection</li>
+                    <li><strong>Safeguards:</strong> Standard Contractual Clauses where needed</li>
+                    <li><strong>Transparency:</strong> Clear information about where data is processed</li>
+                </ul>
+            </div>
+            
+            <div class="request-form">
+                <h3 style="color: var(--primary-blue); margin-bottom: 20px;">GDPR Data Request Form</h3>
+                <p class="gdpr-text" style="margin-bottom: 25px;">
+                    To exercise your GDPR rights, please contact us using the form below or email 
+                    <strong>gdpr@ymal.space</strong>
+                </p>
+                
+                <form action="https://formspree.io/f/xpqqpgqk" method="POST">
+                    <input type="hidden" name="subject" value="GDPR Data Request">
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="gdpr_name">Your Name</label>
+                        <input type="text" id="gdpr_name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="gdpr_email">Email Address</label>
+                        <input type="email" id="gdpr_email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="gdpr_request">Request Type</label>
+                        <select id="gdpr_request" name="request_type" class="form-input" required>
+                            <option value="">Select a request type</option>
+                            <option value="access">Right to Access</option>
+                            <option value="erasure">Right to Erasure</option>
+                            <option value="rectification">Right to Rectification</option>
+                            <option value="restriction">Right to Restriction</option>
+                            <option value="portability">Right to Data Portability</option>
+                            <option value="objection">Right to Object</option>
+                            <option value="other">Other GDPR Request</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="gdpr_details">Additional Details</label>
+                        <textarea id="gdpr_details" name="details" class="form-textarea" rows="4" placeholder="Please provide any additional information about your request"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit GDPR Request</button>
+                </form>
+                
+                <p class="gdpr-text" style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                    We will respond to all GDPR requests within 30 days as required by law.
+                </p>
+            </div>
+            
+            <div class="gdpr-section">
+                <h2>6. Contact Information</h2>
+                <p class="gdpr-text">
+                    For GDPR-related inquiries or to exercise your rights:
+                </p>
+                
+                <ul class="gdpr-list">
+                    <li><strong>Data Protection Officer:</strong> dpo@ymal.space</li>
+                    <li><strong>GDPR Requests:</strong> gdpr@ymal.space</li>
+                    <li><strong>General Privacy:</strong> privacy@ymal.space</li>
+                    <li><strong>Postal Address:</strong> Digital Privacy Hub, San Francisco, CA</li>
+                </ul>
+                
+                <p class="gdpr-text">
+                    You also have the right to lodge a complaint with your local data protection 
+                    authority if you believe we have violated GDPR.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <div class="footer-logo-icon-custom"></div>
+                        <div class="footer-logo-text">Ymal.space</div>
+                    </a>
+                    <p class="footer-tagline">
+                        A privacy-first search engine that protects your data while delivering accurate results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">𝔽</a>
+                        <a href="#" class="social-link">𝕀</a>
+                        <a href="#" class="social-link">𝔾</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <div class="footer-links">
+                        <a href="https://search.ymal.space" class="footer-link">Search Engine</a>
+                        <a href="about.html" class="footer-link">Features</a>
+                        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                        <a href="terms.html" class="footer-link">Terms</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="careers.html" class="footer-link">Careers</a>
+                        <a href="blog.html" class="footer-link">Blog</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+                        <a href="gdpr.html" class="footer-link">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Ymal.space. All rights reserved. Search privately, live freely.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        }
+        
+        // GDPR form handling
+        const gdprForm = document.querySelector('.request-form form');
+        if (gdprForm) {
+            gdprForm.addEventListener('submit', function(e) {
+                const requestType = document.getElementById('gdpr_request').value;
+                if (!requestType) {
+                    e.preventDefault();
+                    alert('Please select a request type');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
