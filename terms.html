@@ -5,112 +5,332 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Ymal Search</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Copilot_20260118_155318.png">
+    <style>
+        .terms-content {
+            padding: 60px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .terms-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary-red);
+        }
+        
+        .terms-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .terms-section h3 {
+            color: var(--primary-red);
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .terms-text {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .terms-list {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .terms-list li {
+            color: var(--text-light);
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .effective-date {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            padding: 10px;
+            background: var(--light-red);
+            border-radius: 8px;
+            max-width: 300px;
+            margin: 0 auto 40px;
+        }
+        
+        .warning-box {
+            background: var(--light-red);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid var(--primary-red);
+        }
+        
+        .agreement-box {
+            background: var(--light-blue);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <a href="/" class="logo">
-                🔍 <span class="logo-text">Ymal</span><span class="logo-domain">.space</span>
+        <div class="container header-container">
+            <a href="/" class="logo-container">
+                <div class="logo-icon-custom"></div>
+                <div class="logo-text">Ymal.space</div>
             </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="about.html">About</a>
-                <a href="privacy-policy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
-                <a href="https://search.ymal.space">Search →</a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="privacy-policy.html" class="nav-link">Privacy</a>
+                <a href="terms.html" class="nav-link active">Terms</a>
+                <a href="https://search.ymal.space" class="search-button">Search →</a>
             </nav>
         </div>
     </header>
 
-    <main class="page-content">
-        <div class="container">
-            <h1>Terms of Service</h1>
-            <p class="last-updated">Effective: January 1, 2024</p>
+    <!-- Terms Content -->
+    <main>
+        <div class="container terms-content">
+            <h1 class="section-title" style="text-align: center; margin-bottom: 10px;">Terms of Service</h1>
+            <div class="effective-date">Effective: January 18, 2024</div>
             
-            <div class="content-section">
+            <div class="agreement-box">
+                <h3 style="margin-top: 0; color: var(--primary-blue);">By using Ymal, you agree to these terms</h3>
+                <p class="terms-text">
+                    Please read these terms carefully. They govern your use of ymal.space and search.ymal.space.
+                </p>
+            </div>
+            
+            <div class="terms-section">
                 <h2>1. Acceptance of Terms</h2>
-                <p>By accessing and using Ymal.space and search.ymal.space ("the Service"), you agree to be bound by these Terms of Service.</p>
+                <p class="terms-text">
+                    By accessing and using Ymal.space and search.ymal.space ("the Service"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+                </p>
+                
+                <p class="terms-text">
+                    If you do not agree with any part of these terms, you must not use our Service.
+                </p>
             </div>
-
-            <div class="content-section">
+            
+            <div class="terms-section">
                 <h2>2. Service Description</h2>
-                <p>Ymal provides a privacy-focused search engine service. The Service:</p>
-                <ul>
-                    <li>Is provided free of charge</li>
-                    <li>Does not require user registration</li>
-                    <li>May display advertisements for revenue</li>
-                    <li>May experience downtime or interruptions</li>
+                <p class="terms-text">
+                    Ymal provides a privacy-focused search engine service. The Service is provided:
+                </p>
+                
+                <ul class="terms-list">
+                    <li><strong>Free of charge</strong> to all users</li>
+                    <li><strong>Without registration</strong> requirements</li>
+                    <li><strong>"As is"</strong> without warranties</li>
+                    <li>With potential <strong>advertisements</strong> for revenue</li>
+                    <li>Subject to <strong>occasional downtime</strong> or maintenance</li>
                 </ul>
             </div>
-
-            <div class="content-section">
+            
+            <div class="terms-section">
                 <h2>3. Acceptable Use</h2>
-                <p>You agree not to use the Service for:</p>
-                <ul>
-                    <li>Illegal activities or purposes</li>
-                    <li>Automated queries or scraping</li>
-                    <li>Overloading our infrastructure</li>
-                    <li>Bypassing any security measures</li>
-                    <li>Harassing or harmful behavior</li>
+                <p class="terms-text">
+                    You agree to use the Service only for lawful purposes and in accordance with these terms.
+                </p>
+                
+                <h3>Prohibited Activities:</h3>
+                <ul class="terms-list">
+                    <li>Using the Service for illegal activities or purposes</li>
+                    <li>Automated queries, scraping, or data mining</li>
+                    <li>Attempting to overload or disrupt our infrastructure</li>
+                    <li>Bypassing security measures or access controls</li>
+                    <li>Harassing, threatening, or harming others</li>
+                    <li>Violating intellectual property rights</li>
+                    <li>Distributing malware or harmful code</li>
                 </ul>
+                
+                <div class="warning-box">
+                    <h3 style="color: var(--primary-red); margin-top: 0;">Abuse Policy</h3>
+                    <p class="terms-text">
+                        We reserve the right to limit or block access to users who violate these terms or abuse the Service.
+                    </p>
+                </div>
             </div>
-
-            <div class="content-section">
+            
+            <div class="terms-section">
                 <h2>4. Intellectual Property</h2>
-                <p>All content on ymal.space, excluding search results, is owned by Ymal. The Ymal name and logo are trademarks.</p>
-                <p>Search results are sourced from third parties and are subject to their respective copyrights.</p>
+                <p class="terms-text">
+                    All content on ymal.space, excluding search results, is owned by Ymal or its licensors. This includes:
+                </p>
+                
+                <ul class="terms-list">
+                    <li>The Ymal name and logo</li>
+                    <li>Website design and layout</li>
+                    <li>Original text and graphics</li>
+                    <li>Software code and functionality</li>
+                </ul>
+                
+                <p class="terms-text">
+                    Search results are sourced from third parties and are subject to their respective copyrights and terms.
+                </p>
             </div>
-
-            <div class="content-section">
+            
+            <div class="terms-section">
                 <h2>5. Disclaimer of Warranties</h2>
-                <p>The Service is provided "as is" without warranties of any kind. We do not guarantee:</p>
-                <ul>
+                <p class="terms-text">
+                    The Service is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee:
+                </p>
+                
+                <ul class="terms-list">
                     <li>100% uptime or availability</li>
-                    <li>Accuracy of search results</li>
+                    <li>Accuracy or completeness of search results</li>
                     <li>Security of data transmission</li>
                     <li>Fitness for any particular purpose</li>
+                    <li>Error-free operation</li>
                 </ul>
             </div>
-
-            <div class="content-section">
+            
+            <div class="terms-section">
                 <h2>6. Limitation of Liability</h2>
-                <p>Ymal shall not be liable for any damages arising from use of the Service, including but not limited to:</p>
-                <ul>
+                <p class="terms-text">
+                    To the fullest extent permitted by law, Ymal shall not be liable for any damages arising from your use of the Service, including but not limited to:
+                </p>
+                
+                <ul class="terms-list">
                     <li>Direct, indirect, or consequential damages</li>
-                    <li>Loss of data or profits</li>
-                    <li>Service interruptions</li>
+                    <li>Loss of data, profits, or business opportunities</li>
+                    <li>Service interruptions or failures</li>
                     <li>Third-party content accessed through search results</li>
+                    <li>Security breaches or data leaks</li>
                 </ul>
             </div>
-
-            <div class="content-section">
+            
+            <div class="terms-section">
                 <h2>7. Changes to Terms</h2>
-                <p>We reserve the right to modify these terms at any time. Continued use of the Service constitutes acceptance of modified terms.</p>
+                <p class="terms-text">
+                    We reserve the right to modify these terms at any time. We will notify users of significant changes by:
+                </p>
+                
+                <ul class="terms-list">
+                    <li>Updating the effective date at the top of this page</li>
+                    <li>Posting announcements on our website</li>
+                    <li>If possible, via email notification</li>
+                </ul>
+                
+                <p class="terms-text">
+                    Your continued use of the Service after changes constitutes acceptance of the modified terms.
+                </p>
             </div>
-
-            <div class="content-section">
-                <h2>8. Contact</h2>
-                <p>Questions about these terms? Contact us at:</p>
-                <p>Email: legal@ymal.space</p>
+            
+            <div class="terms-section">
+                <h2>8. Governing Law</h2>
+                <p class="terms-text">
+                    These terms shall be governed by and construed in accordance with the laws of the jurisdiction where Ymal operates, without regard to its conflict of law provisions.
+                </p>
+            </div>
+            
+            <div class="terms-section">
+                <h2>9. Contact Information</h2>
+                <p class="terms-text">
+                    For questions about these terms or the Service:
+                </p>
+                
+                <ul class="terms-list">
+                    <li><strong>Email:</strong> legal@ymal.space</li>
+                    <li><strong>Contact Form:</strong> <a href="contact.html" style="color: var(--primary-blue);">Visit our contact page</a></li>
+                </ul>
+                
+                <p class="terms-text">
+                    We aim to respond to all legal inquiries within 5 business days.
+                </p>
             </div>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    🔍 Ymal.space
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <div class="footer-logo-icon-custom"></div>
+                        <div class="footer-logo-text">Ymal.space</div>
+                    </a>
+                    <p class="footer-tagline">
+                        A privacy-first search engine that protects your data while delivering accurate results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">𝔽</a>
+                        <a href="#" class="social-link">𝕀</a>
+                        <a href="#" class="social-link">𝔾</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="privacy-policy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
+                
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <div class="footer-links">
+                        <a href="https://search.ymal.space" class="footer-link">Search Engine</a>
+                        <a href="about.html" class="footer-link">Features</a>
+                        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                        <a href="terms.html" class="footer-link">Terms</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Careers</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                        <a href="#" class="footer-link">GDPR</a>
+                    </div>
                 </div>
             </div>
-            <p class="copyright">© 2024 Ymal.space</p>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Ymal.space. All rights reserved. Search privately, live freely.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
