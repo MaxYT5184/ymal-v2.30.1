@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ymal Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo-container">
+                <div class="logo-icon">Y</div>
+                <div class="logo-text">Ymal.space</div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="privacy-policy.html" class="nav-link">Privacy</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <a href="https://search.ymal.space" class="search-button">Search →</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1 class="section-title" style="text-align: left; margin-bottom: 20px;">Contact Us</h1>
+                <p class="hero-subtitle" style="text-align: left; margin-bottom: 40px;">
+                    Have questions, feedback, or need support? We'd love to hear from you.
+                </p>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/xpqqpgqk" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div id="formMessage" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px; text-align: center;"></div>
+                </div>
+                
+                <div style="margin-top: 50px; padding: 30px; background: var(--light-blue); border-radius: 15px;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 15px;">Other Ways to Reach Us</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div style="padding: 20px; background: white; border-radius: 10px;">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 10px;">📍 Address</h4>
+                            <p style="color: var(--text-light);">Digital Privacy Hub<br>San Francisco, CA</p>
+                        </div>
+                        <div style="padding: 20px; background: white; border-radius: 10px;">
+                            <h4 style="color: var(--primary-red); margin-bottom: 10px;">📧 Email</h4>
+                            <p style="color: var(--text-light);">contact@ymal.space<br>support@ymal.space</p>
+                        </div>
+                        <div style="padding: 20px; background: white; border-radius: 10px;">
+                            <h4 style="color: var(--primary-blue); margin-bottom: 10px;">⏰ Response Time</h4>
+                            <p style="color: var(--text-light);">24-48 hours<br>Monday - Friday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <div class="footer-logo-icon">Y</div>
+                        <div class="footer-logo-text">Ymal.space</div>
+                    </a>
+                    <p class="footer-tagline">
+                        A privacy-first search engine that protects your data while delivering accurate results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">𝔽</a>
+                        <a href="#" class="social-link">𝕀</a>
+                        <a href="#" class="social-link">𝔾</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <div class="footer-links">
+                        <a href="https://search.ymal.space" class="footer-link">Search Engine</a>
+                        <a href="about.html" class="footer-link">Features</a>
+                        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                        <a href="terms.html" class="footer-link">Terms</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Careers</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                        <a href="#" class="footer-link">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Ymal.space. All rights reserved. Search privately, live freely.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        
+        // Contact form handling
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    formMessage.textContent = 'Thank you! Your message has been sent.';
+                    formMessage.style.background = 'var(--light-blue)';
+                    formMessage.style.color = 'var(--primary-blue)';
+                    formMessage.style.display = 'block';
+                    contactForm.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                formMessage.textContent = 'Oops! Something went wrong. Please try again.';
+                formMessage.style.background = 'var(--light-red)';
+                formMessage.style.color = 'var(--primary-red)';
+                formMessage.style.display = 'block';
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
