@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Join Ymal Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Copilot_20260118_155318.png">
+    <style>
+        .careers-hero {
+            padding: 100px 0 60px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
+            color: white;
+        }
+        
+        .careers-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .mission-box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 40px auto;
+            backdrop-filter: blur(10px);
+        }
+        
+        .open-positions {
+            padding: 80px 0;
+            background: var(--background);
+        }
+        
+        .position-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--primary-blue);
+        }
+        
+        .position-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .position-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            padding: 5px 15px;
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .tag.remote {
+            background: var(--light-red);
+            color: var(--primary-red);
+        }
+        
+        .benefits {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: var(--background);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+        
+        .application-process {
+            padding: 60px 0;
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .process-step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+        }
+        
+        .no-openings {
+            text-align: center;
+            padding: 80px 0;
+            color: var(--text-light);
+        }
+        
+        .apply-btn {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo-container">
+                <div class="logo-icon-custom"></div>
+                <div class="logo-text">Ymal.space</div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="careers.html" class="nav-link active">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="https://search.ymal.space" class="search-button">Search →</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="careers-hero">
+        <div class="container">
+            <h1>Build the Future of Private Search</h1>
+            <p class="hero-subtitle" style="color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 30px;">
+                Join our mission to create a search engine that respects privacy and puts users first.
+            </p>
+            
+            <div class="mission-box">
+                <h3 style="margin-bottom: 15px; color: white;">Our Mission</h3>
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.8;">
+                    At Ymal, we believe privacy is a fundamental right, not a premium feature. 
+                    We're building technology that protects users while delivering exceptional 
+                    search experiences. If you're passionate about privacy, technology, and 
+                    making the web better for everyone, we'd love to hear from you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="open-positions">
+        <div class="container">
+            <h2 class="section-title">Open Positions</h2>
+            <p class="hero-subtitle" style="text-align: center; margin-bottom: 50px;">
+                We're looking for talented individuals to join our growing team
+            </p>
+            
+            <!-- Position 1 -->
+            <div class="position-card">
+                <div class="position-header">
+                    <div>
+                        <h3 style="color: var(--text-dark); margin-bottom: 10px;">Frontend Developer</h3>
+                        <p style="color: var(--text-light);">Engineering • Full-time</p>
+                    </div>
+                    <div class="position-tags">
+                        <span class="tag remote">🌍 Remote</span>
+                        <span class="tag">💼 Mid-Level</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">About the Role</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Build the user interface for our privacy-focused search engine. You'll work 
+                        on creating fast, accessible, and beautiful experiences that make private 
+                        search enjoyable for everyone.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Requirements</h4>
+                    <ul style="color: var(--text-light); margin-left: 20px; line-height: 1.7;">
+                        <li>3+ years experience with modern JavaScript frameworks</li>
+                        <li>Strong understanding of web performance and accessibility</li>
+                        <li>Experience with privacy-focused development practices</li>
+                        <li>Knowledge of search UI/UX best practices</li>
+                    </ul>
+                </div>
+                
+                <a href="contact.html?subject=Frontend%20Developer%20Application" class="apply-btn">Apply Now</a>
+            </div>
+            
+            <!-- Position 2 -->
+            <div class="position-card">
+                <div class="position-header">
+                    <div>
+                        <h3 style="color: var(--text-dark); margin-bottom: 10px;">Privacy Engineer</h3>
+                        <p style="color: var(--text-light);">Engineering • Full-time</p>
+                    </div>
+                    <div class="position-tags">
+                        <span class="tag remote">🌍 Remote</span>
+                        <span class="tag">💼 Senior</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">About the Role</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Design and implement privacy-preserving systems for our search engine. 
+                        You'll ensure that our architecture protects user data by default and 
+                        develops new approaches to private search technology.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Requirements</h4>
+                    <ul style="color: var(--text-light); margin-left: 20px; line-height: 1.7;">
+                        <li>5+ years in software engineering with privacy focus</li>
+                        <li>Experience with data anonymization techniques</li>
+                        <li>Knowledge of privacy regulations (GDPR, CCPA, etc.)</li>
+                        <li>Strong understanding of security best practices</li>
+                    </ul>
+                </div>
+                
+                <a href="contact.html?subject=Privacy%20Engineer%20Application" class="apply-btn">Apply Now</a>
+            </div>
+            
+            <!-- Position 3 -->
+            <div class="position-card">
+                <div class="position-header">
+                    <div>
+                        <h3 style="color: var(--text-dark); margin-bottom: 10px;">Growth Marketing Specialist</h3>
+                        <p style="color: var(--text-light);">Marketing • Full-time</p>
+                    </div>
+                    <div class="position-tags">
+                        <span class="tag remote">🌍 Remote</span>
+                        <span class="tag">💼 Mid-Level</span>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">About the Role</h4>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        Help spread the word about private search and grow our user base. 
+                        You'll develop marketing strategies that respect user privacy while 
+                        effectively communicating our value proposition.
+                    </p>
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Requirements</h4>
+                    <ul style="color: var(--text-light); margin-left: 20px; line-height: 1.7;">
+                        <li>3+ years in growth marketing or digital marketing</li>
+                        <li>Experience with privacy-focused marketing strategies</li>
+                        <li>Strong analytical and communication skills</li>
+                        <li>Knowledge of SEO and content marketing</li>
+                    </ul>
+                </div>
+                
+                <a href="contact.html?subject=Growth%20Marketing%20Specialist%20Application" class="apply-btn">Apply Now</a>
+            </div>
+            
+            <!-- No Openings Fallback -->
+            <div class="no-openings" style="display: none;">
+                <h3 style="color: var(--text-dark); margin-bottom: 20px;">No Open Positions Right Now</h3>
+                <p style="max-width: 600px; margin: 0 auto;">
+                    We're not currently hiring, but we're always interested in hearing from 
+                    passionate individuals. Feel free to send us your resume for future 
+                    opportunities at careers@ymal.space
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Work at Ymal</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Fully Remote</h4>
+                    <p style="color: var(--text-light);">Work from anywhere in the world</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Mission-Driven</h4>
+                    <p style="color: var(--text-light);">Work that actually makes a difference</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Competitive Pay</h4>
+                    <p style="color: var(--text-light);">Fair compensation and equity options</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏖️</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Flexible Time Off</h4>
+                    <p style="color: var(--text-light);">Unlimited PTO and flexible schedules</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="application-process">
+        <div class="container">
+            <h2 class="section-title">Our Hiring Process</h2>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Application</h4>
+                    <p style="color: var(--text-light);">Submit your application through our contact form</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Initial Call</h4>
+                    <p style="color: var(--text-light);">30-minute chat with our team</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Technical Interview</h4>
+                    <p style="color: var(--text-light);">Skills assessment (if applicable)</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Team Interview</h4>
+                    <p style="color: var(--text-light);">Meet the team you'll be working with</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Offer</h4>
+                    <p style="color: var(--text-light);">We make you an offer to join our team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <div class="footer-logo-icon-custom"></div>
+                        <div class="footer-logo-text">Ymal.space</div>
+                    </a>
+                    <p class="footer-tagline">
+                        A privacy-first search engine that protects your data while delivering accurate results.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">𝔽</a>
+                        <a href="#" class="social-link">𝕀</a>
+                        <a href="#" class="social-link">𝔾</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Product</h4>
+                    <div class="footer-links">
+                        <a href="https://search.ymal.space" class="footer-link">Search Engine</a>
+                        <a href="about.html" class="footer-link">Features</a>
+                        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+                        <a href="terms.html" class="footer-link">Terms</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="careers.html" class="footer-link">Careers</a>
+                        <a href="blog.html" class="footer-link">Blog</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                        <a href="terms.html" class="footer-link">Terms of Service</a>
+                        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+                        <a href="gdpr.html" class="footer-link">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Ymal.space. All rights reserved. Search privately, live freely.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        }
+        
+        // Apply button handling
+        document.querySelectorAll('.apply-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Prefill subject in contact form if needed
+                const subject = this.getAttribute('href').split('subject=')[1];
+                if (subject) {
+                    localStorage.setItem('jobApplicationSubject', decodeURIComponent(subject));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
