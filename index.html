@@ -131,26 +131,6 @@
         </div>
     </section>
 
-    <section class="partners-section">
-  <h2>Our Partners</h2>
-<div class="slider">
-  <!-- Slide 1 -->
-  <div class="slide">
-    <a href="https://www.defendaminecraft.online/" target="_blank">
-      <img src="https://png.pngtree.com/png-clipart/20230529/original/pngtree-silver-shield-logo-design-png-image_9173486.png" alt="DefendAMinecraft Logo">
-      <p>DefendAMinecraft</p>
-    </a>
-  </div>
-  
-  <!-- Add as many as you need -->
-</div>
-
-<!-- Slider Controls (Dots) -->
-<div class="dots">
-  <label for="s1"></label>
-</div>
-</section>
-
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">
@@ -243,61 +223,6 @@
             });
         }
 
-        // Add this if you want auto-sliding functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.querySelectorAll('.dots label');
-  
-  // Clone slides for infinite scroll effect
-  slides.forEach(slide => {
-    const clone = slide.cloneNode(true);
-    slider.appendChild(clone);
-  });
-  
-  let currentIndex = 0;
-  
-  // Dot navigation
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentIndex = index;
-      scrollToSlide(currentIndex);
-      updateDots();
-    });
-  });
-  
-  function scrollToSlide(index) {
-    const slideWidth = slides[0].offsetWidth + 32; // including gap
-    slider.scrollTo({
-      left: slideWidth * index,
-      behavior: 'smooth'
-    });
-  }
-  
-  function updateDots() {
-    dots.forEach((dot, index) => {
-      dot.style.background = index === currentIndex ? '#3498db' : '#bdc3c7';
-      dot.style.transform = index === currentIndex ? 'scale(1.3)' : 'scale(1)';
-    });
-  }
-  
-  // Auto-slide (optional)
-  let autoSlide = setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    scrollToSlide(currentIndex);
-    updateDots();
-  }, 3000);
-  
-  // Pause auto-slide on hover
-  slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
-  slider.addEventListener('mouseleave', () => {
-    autoSlide = setInterval(() => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      scrollToSlide(currentIndex);
-      updateDots();
-    }, 3000);
-  });
-});
     </script>
 </body>
 </html>
