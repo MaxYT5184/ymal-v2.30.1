@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Ymal School</ShortName>
+  <Description>School-safe search engine for students. No proxy, no VPN, no bypass.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url
+    type="text/html"
+    method="get"
+    template="https://ymal.space/school/browser.html?q={searchTerms}" />
+  <Image height="16" width="16" type="image/png">https://ymal.space/favicon.png</Image>
+</OpenSearchDescription>
