@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ymal School Search</title>
+  <link rel="search"
+        type="application/opensearchdescription+xml"
+        title="Ymal School Search"
+        href="/opensearch.xml">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      color: #0078d7;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.5em;
+      max-width: 700px;
+      margin: 10px auto 0 auto;
+    }
+    form {
+      display: flex;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 30px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 1em;
+      border: none;
+      background-color: #0078d7;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      max-width: 700px;
+      line-height: 1.5em;
+    }
+    footer a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #0078d7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ymal School Search</h1>
+    <p>
+      <span class="highlight">Ymal</span> is a <span class="highlight">fast, free, and safe</span> search engine designed for students. 
+      We are currently developing a school-specific version that will allow easy tracking of students’ searches and the ability to block specific queries if needed. 
+      The current version has <span class="highlight">no proxy, no VPN, and no bypass</span> and is fully compatible with OpenSearch, which allows Edge and Chrome to auto-add it as a search engine.
+    </p>
+    <p>
+      If you are a student, enjoy searching safely and quickly. 
+      If you are a school administrator or a company like Blocksi, you can contact us at <a href="mailto:edu@ymal.space">edu@ymal.space</a> for support or whitelist requests.
+      For general support, students and teachers can reach us at <a href="mailto:support@ymal.space">support@ymal.space</a>.
+    </p>
+    <p>
+      <span class="highlight">Why choose Ymal for schools?</span>  
+      - Enforces SafeSearch  
+      - Clean interface, no ads or distractions  
+      - Compatible with Edge and Chrome OpenSearch  
+      - Designed specifically for educational use  
+      - Future school-specific features for controlled search history and blocking
+    </p>
+  </header>
+
+  <form action="/school/browser.html" method="get">
+    <input type="text" name="q" placeholder="Search Ymal School..." required>
+    <button type="submit">Search</button>
+  </form>
+
+  <footer>
+    <p>
+      Designed for educational use. Powered by <span class="highlight">Ymal</span>.  
+      Visit <a href="https://ymal.space">ymal.space</a> for the full version.
+    </p>
+    <p>
+      Questions or requests? Students and teachers: <a href="mailto:support@ymal.space">support@ymal.space</a>.  
+      School admins & companies like Blocksi: <a href="mailto:edu@ymal.space">edu@ymal.space</a>
+    </p>
+  </footer>
+</body>
+</html>
