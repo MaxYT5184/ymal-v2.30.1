@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting • Squidly Applications</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      background: radial-gradient(circle at top, #1f2937 0%, #0f172a 45%, #020617 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Animated background glow */
+    .glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(99, 102, 241, 0.25);
+      filter: blur(120px);
+      border-radius: 50%;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .glow2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(0, 255, 200, 0.12);
+      filter: blur(100px);
+      border-radius: 50%;
+      right: -100px;
+      bottom: -100px;
+      animation: float2 10s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(40px, -30px);
+      }
+    }
+
+    @keyframes float2 {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(-30px, 40px);
+      }
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 92%;
+      max-width: 650px;
+      padding: 50px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(20px);
+      text-align: center;
+      box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.35),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 25px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-weight: bold;
+      box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .countdown {
+      margin-top: 35px;
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #60a5fa, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px rgba(34, 211, 238, 0.35);
+    }
+
+    .bar-container {
+      width: 100%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      margin-top: 30px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      width: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #6366f1, #06b6d4);
+      animation: shrink 5s linear forwards;
+    }
+
+    @keyframes shrink {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 0%;
+      }
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 35px 25px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .countdown {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow"></div>
+  <div class="glow2"></div>
+
+  <div class="card">
+    <div class="logo">🦑</div>
+
+    <h1>Redirecting to Squidly Applications</h1>
+
+    <p>
+      Please wait while we securely redirect you to the official
+      Squidly Applications portal.
+    </p>
+
+    <div class="countdown" id="countdown">5</div>
+
+    <div class="bar-container">
+      <div class="bar"></div>
+    </div>
+
+    <div class="footer">
+      Redirecting automatically...
+    </div>
+  </div>
+
+  <script>
+    let timeLeft = 5;
+    const countdown = document.getElementById("countdown");
+
+    const timer = setInterval(() => {
+      timeLeft--;
+      countdown.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+
+        window.location.href =
+          "https://squidly-apply.max-yt2025.space/";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
